@@ -1,41 +1,55 @@
 import SwiftUI
 
 struct TicketsView: View {
-    @State private var tickets: [Ticket] = [] // Use private for better encapsulation
-    @State private var showCreateTicketView = false // State variable to show the create ticket view
+    
+    @State private var tickets: [ticket] = []
+    @State private var showCreateTicketView = false
+    @State private var currentSelection: ticket?
 
     var body: some View {
-        ZStack { // Use ZStack to overlay the button on top of the main content
+        ZStack {
             VStack {
-                Text("Work Orders")
-                    .font(.title)
-                    .bold()
-                    .padding(.leading)
-                    .foregroundColor(.white)
-
-                ScrollView {
-                    // Display the customer cards, pulling data from the ticket
-                    ForEach(tickets, id: \.uniqueID) { ticket in
-                        TicketCard(ticket: ticket)
-                            .padding(.horizontal)
-                            .padding(.vertical, 0)
+                NavigationStack {
+                    ScrollView {
+                        ForEach(tickets, id: \.id) { ticket in
+                            NavigationLink(value: ticket) {
+                                TicketCard(ticket: ticket)
+                                    .padding(.horizontal)
+                            }
+                        }
+                    }
+                    .navigationTitle("Recent")
+                    .navigationBarTitleDisplayMode(.automatic)
+                    .toolbar {
+                        // Add a button to the right side of the navigation bar
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Button(action: {
+                                print("Settings tapped")
+                            }) {
+                                Image(systemName: "tray") // Example: Gear icon
+                                    .foregroundColor(.blue)
+                            }
+                        }
+                    }
+                    .navigationDestination(for: ticket.self) { ticket in
+                        VehicleDetailView(id: ticket.id)
                     }
                 }
+                .refreshable{
+                    fetchTickets()
+                }
+                .onAppear {
+                    fetchTickets()
+                    print("Tickets view onAppear")
+                }
             }
-            .onAppear {
-                fetchTickets() // Call a separate function to fetch tickets
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color.black) // Dark theme background
-            .edgesIgnoringSafeArea(.bottom)
-            
-            // Circular Create Button
             VStack {
                 Spacer()
                 HStack {
                     Spacer()
                     Button(action: {
-                        showCreateTicketView = true // Show the create ticket view
+                        showCreateTicketView = true
+                        print("Ooening createTicketView")
                     }) {
                         Text("+")
                             .fontWeight(.bold)
@@ -52,22 +66,31 @@ struct TicketsView: View {
             }
         }
         .sheet(isPresented: $showCreateTicketView) {
-            CreateTicketView() // Present the CreateTicketView as a sheet
+            CreateTicketView(isPresented: $showCreateTicketView)
         }
+        
+    }
+    private func currentDate() -> String {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long // e.g., "November 25, 2024"
+        return formatter.string(from: Date())
     }
 
-    private func fetchTickets() { // Separate function for clarity
+    private func fetchTickets() {
         ApiService.shared.fetchTickets { fetchedTickets in
             if let fetchedTickets = fetchedTickets {
                 tickets = fetchedTickets
+                
             }
         }
     }
 }
 
-struct TicketsView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         TicketsView()
     }
 }
+
+
 

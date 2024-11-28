@@ -9,20 +9,20 @@
 import SwiftUI
 
 struct CustomerCard: View {
-    let ticket: Ticket
+    let customer: Customer
     
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
                 // Display customer name
-                Text("\(ticket.customer.firstName) \(ticket.customer.lastName)")
+                Text("\(customer.firstName) \(customer.lastName)")
                     .font(.title2)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
                 
                 
                 // Display vehicle information (make, model, year) without commas
-                Text("\(ticket.customer.phoneNumber)")
+                Text("\(customer.phoneNumber)")
                     .foregroundColor(.gray)
 
                 

@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct CustomersView: View {
-    @State private var tickets: [Ticket] = [] // Use private for better encapsulation
+    @State private var customer: [Customer] = [] // Use private for better encapsulation
     
     
     var body: some View {
@@ -14,25 +14,26 @@ struct CustomersView: View {
             
             ScrollView {
                 // Display the customer cards, pulling data from the ticket
-                ForEach(tickets, id: \.uniqueID) { ticket in
-                    CustomerCard(ticket: ticket)
+                ForEach(customer, id: \.id) { customer in
+                    CustomerCard(customer: customer)
                         .padding(.horizontal)
                         .padding(.vertical, 0)
                 }
             }
         }
+        .refreshable{
+            fetchCustomers()
+        }
         .onAppear {
-            fetchTickets() // Call a separate function to fetch tickets
+            fetchCustomers() // Call a separate function to fetch tickets
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.black) // Dark theme background
-        .edgesIgnoringSafeArea(.bottom)
     }
     
-    private func fetchTickets() { // Separate function for clarity
-        ApiService.shared.fetchTickets { fetchedTickets in
-            if let fetchedTickets = fetchedTickets {
-                tickets = fetchedTickets
+    private func fetchCustomers() { // Separate function for clarity
+        ApiService.shared.fetchCustomers { fetchedCustomers in
+            if let fetchedCustomers = fetchedCustomers {
+                customer = fetchedCustomers
             }
         }
     }

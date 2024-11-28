@@ -3,39 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		580DEA072CB32F77006C2406 /* crmMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DEA062CB32F77006C2406 /* crmMobileApp.swift */; };
-		580DEA0B2CB32F78006C2406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 580DEA0A2CB32F78006C2406 /* Assets.xcassets */; };
-		580DEA0E2CB32F78006C2406 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 580DEA0D2CB32F78006C2406 /* Preview Assets.xcassets */; };
-		580DEA1F2CB47EAE006C2406 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DEA1E2CB47EAE006C2406 /* ContentView.swift */; };
 		580DEA212CB4805F006C2406 /* ProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DEA202CB4805F006C2406 /* ProgressRing.swift */; };
 		580DEA232CB480DE006C2406 /* CustomerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DEA222CB480DE006C2406 /* CustomerCard.swift */; };
 		580DEA252CB48126006C2406 /* CustomersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DEA242CB48126006C2406 /* CustomersView.swift */; };
-		580DEA272CB48149006C2406 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DEA262CB48149006C2406 /* Customer.swift */; };
+		580DEA272CB48149006C2406 /* Customers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DEA262CB48149006C2406 /* Customers.swift */; };
 		580DEA292CB488F9006C2406 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DEA282CB488F9006C2406 /* ApiService.swift */; };
 		580DEA342CB77903006C2406 /* TicketCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DEA332CB77903006C2406 /* TicketCard.swift */; };
-		580DEA362CB77B23006C2406 /* TicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DEA352CB77B23006C2406 /* TicketsView.swift */; };
 		580DEA392CB78AE9006C2406 /* CreateTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DEA382CB78AE9006C2406 /* CreateTicketView.swift */; };
+		581EBE972CD1E9A400EEE666 /* PartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581EBE962CD1E99C00EEE666 /* PartManager.swift */; };
+		587DD0672CF91C46002191C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DEA1E2CB47EAE006C2406 /* ContentView.swift */; };
+		58DB4E352CC6E441003E9017 /* VehicleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DB4E342CC6E441003E9017 /* VehicleDetailView.swift */; };
+		58DB4E3D2CC99B91003E9017 /* TicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DB4E3C2CC99B8B003E9017 /* TicketsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		580DEA032CB32F77006C2406 /* crmMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crmMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		580DEA062CB32F77006C2406 /* crmMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crmMobileApp.swift; sourceTree = "<group>"; };
-		580DEA0A2CB32F78006C2406 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		580DEA0D2CB32F78006C2406 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		580DEA1E2CB47EAE006C2406 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		580DEA202CB4805F006C2406 /* ProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRing.swift; sourceTree = "<group>"; };
 		580DEA222CB480DE006C2406 /* CustomerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerCard.swift; sourceTree = "<group>"; };
 		580DEA242CB48126006C2406 /* CustomersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomersView.swift; sourceTree = "<group>"; };
-		580DEA262CB48149006C2406 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		580DEA262CB48149006C2406 /* Customers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customers.swift; sourceTree = "<group>"; };
 		580DEA282CB488F9006C2406 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		580DEA332CB77903006C2406 /* TicketCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCard.swift; sourceTree = "<group>"; };
-		580DEA352CB77B23006C2406 /* TicketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsView.swift; sourceTree = "<group>"; };
 		580DEA382CB78AE9006C2406 /* CreateTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTicketView.swift; sourceTree = "<group>"; };
+		581EBE962CD1E99C00EEE666 /* PartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartManager.swift; sourceTree = "<group>"; };
+		587DD0532CF8A500002191C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		587DD05C2CF8C241002191C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58DB4E342CC6E441003E9017 /* VehicleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailView.swift; sourceTree = "<group>"; };
+		58DB4E3C2CC99B8B003E9017 /* TicketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		581EBEA02CE052D700EEE666 /* Components */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Components; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		580DEA002CB32F77006C2406 /* Frameworks */ = {
@@ -53,6 +59,7 @@
 			children = (
 				580DEA052CB32F77006C2406 /* crmMobile */,
 				580DEA042CB32F77006C2406 /* Products */,
+				587DD0532CF8A500002191C6 /* Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,12 +74,14 @@
 		580DEA052CB32F77006C2406 /* crmMobile */ = {
 			isa = PBXGroup;
 			children = (
+				58DB4E3A2CC99B6E003E9017 /* HomeTab */,
+				580DEA0C2CB32F78006C2406 /* Preview Content */,
 				580DEA062CB32F77006C2406 /* crmMobileApp.swift */,
 				580DEA1E2CB47EAE006C2406 /* ContentView.swift */,
-				580DEA0A2CB32F78006C2406 /* Assets.xcassets */,
-				580DEA0C2CB32F78006C2406 /* Preview Content */,
 				580DEA322CB70088006C2406 /* CustomerTab */,
 				580DEA372CB78AC0006C2406 /* TicketTab */,
+				581EBEA02CE052D700EEE666 /* Components */,
+				587DD05C2CF8C241002191C6 /* Assets.xcassets */,
 			);
 			path = crmMobile;
 			sourceTree = "<group>";
@@ -80,7 +89,6 @@
 		580DEA0C2CB32F78006C2406 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				580DEA0D2CB32F78006C2406 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -88,10 +96,10 @@
 		580DEA322CB70088006C2406 /* CustomerTab */ = {
 			isa = PBXGroup;
 			children = (
+				580DEA282CB488F9006C2406 /* ApiService.swift */,
 				580DEA242CB48126006C2406 /* CustomersView.swift */,
 				580DEA222CB480DE006C2406 /* CustomerCard.swift */,
-				580DEA282CB488F9006C2406 /* ApiService.swift */,
-				580DEA262CB48149006C2406 /* Customer.swift */,
+				580DEA262CB48149006C2406 /* Customers.swift */,
 			);
 			path = CustomerTab;
 			sourceTree = "<group>";
@@ -99,12 +107,21 @@
 		580DEA372CB78AC0006C2406 /* TicketTab */ = {
 			isa = PBXGroup;
 			children = (
-				580DEA202CB4805F006C2406 /* ProgressRing.swift */,
-				580DEA352CB77B23006C2406 /* TicketsView.swift */,
-				580DEA332CB77903006C2406 /* TicketCard.swift */,
+				581EBE962CD1E99C00EEE666 /* PartManager.swift */,
+				58DB4E3C2CC99B8B003E9017 /* TicketsView.swift */,
 				580DEA382CB78AE9006C2406 /* CreateTicketView.swift */,
+				580DEA332CB77903006C2406 /* TicketCard.swift */,
+				580DEA202CB4805F006C2406 /* ProgressRing.swift */,
+				58DB4E342CC6E441003E9017 /* VehicleDetailView.swift */,
 			);
 			path = TicketTab;
+			sourceTree = "<group>";
+		};
+		58DB4E3A2CC99B6E003E9017 /* HomeTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +138,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				581EBEA02CE052D700EEE666 /* Components */,
 			);
 			name = crmMobile;
 			productName = crmMobile;
@@ -165,8 +185,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				580DEA0E2CB32F78006C2406 /* Preview Assets.xcassets in Resources */,
-				580DEA0B2CB32F78006C2406 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,15 +195,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				580DEA362CB77B23006C2406 /* TicketsView.swift in Sources */,
-				580DEA1F2CB47EAE006C2406 /* ContentView.swift in Sources */,
 				580DEA342CB77903006C2406 /* TicketCard.swift in Sources */,
+				58DB4E352CC6E441003E9017 /* VehicleDetailView.swift in Sources */,
 				580DEA232CB480DE006C2406 /* CustomerCard.swift in Sources */,
 				580DEA252CB48126006C2406 /* CustomersView.swift in Sources */,
-				580DEA272CB48149006C2406 /* Customer.swift in Sources */,
+				580DEA272CB48149006C2406 /* Customers.swift in Sources */,
 				580DEA072CB32F77006C2406 /* crmMobileApp.swift in Sources */,
 				580DEA292CB488F9006C2406 /* ApiService.swift in Sources */,
+				587DD0672CF91C46002191C6 /* ContentView.swift in Sources */,
+				58DB4E3D2CC99B91003E9017 /* TicketsView.swift in Sources */,
 				580DEA392CB78AE9006C2406 /* CreateTicketView.swift in Sources */,
+				581EBE972CD1E9A400EEE666 /* PartManager.swift in Sources */,
 				580DEA212CB4805F006C2406 /* ProgressRing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,17 +337,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"crmMobile/Preview Content\"";
 				DEVELOPMENT_TEAM = 56V846M897;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Bandera;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +359,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.trust.crmMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -346,17 +371,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"crmMobile/Preview Content\"";
 				DEVELOPMENT_TEAM = 56V846M897;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Bandera;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -364,6 +393,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.trust.crmMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
